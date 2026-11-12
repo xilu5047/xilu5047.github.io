@@ -6,3 +6,21 @@
 @media(max-width:600px){.wrap{width:calc(100% - 36px)}.header-inner{min-height:66px}.top-nav{top:65px}.logo-text{font-size:15px}.identity-card{grid-template-columns:105px minmax(0,1fr)}.portrait{min-height:217px}.portrait strong{font-size:34px}.portrait small{font-size:6px;letter-spacing:.06em}.identity-body{padding:14px 14px 9px}.identity-name{font-size:21px}.identity-role{margin:7px 0;font-size:11px}.identity-affiliation{font-size:11px}.identity-links{padding:0 14px 8px;grid-template-columns:repeat(2,max-content);gap:4px 10px}.identity-links a{font-size:10px}.cv-link{margin:0 14px 14px;padding:7px 10px;font-size:10px}.section{padding:45px 0 48px}.intro{padding-top:42px}.intro h1{font-size:56px}.headline{font-size:24px}.academic-affiliation{font-size:11px;flex-wrap:wrap}.topic-band{gap:8px;font-size:9px}.section h2{font-size:28px}.section-title{gap:9px}.section-number{flex-basis:23px}.news-list{margin-left:0}.news-list div{grid-template-columns:70px minmax(0,1fr);gap:8px}.research-feature{padding:22px 19px}.research-feature h3{font-size:21px}.research-cards{grid-template-columns:1fr;gap:8px}.mini-card{padding:19px 18px}.mini-card:last-child{grid-column:auto}.publication{grid-template-columns:1fr;gap:4px}.pub-year{font-size:11px}.entry,.education-item{grid-template-columns:1fr;gap:5px}.entry-date{font-size:10px}.entry h3,.education-item h3{font-size:18px}.split-info,.skills-grid{grid-template-columns:1fr;gap:12px}.contact-section{margin:15px 0 0;padding:23px 18px}.contact-email{font-size:19px}.footer{justify-content:flex-start;gap:10px 24px}.section-action{font-size:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 @media print{.site-header,.sidebar,.intro-actions,.topic-band,.footer,.contact-section,.paper-actions,.research-disclaimer{display:none!important}.page{display:block}.content{width:100%}.section{break-inside:avoid;padding:18px 0}.intro{padding:0}.research-cards{grid-template-columns:repeat(3,1fr)}body{background:white;color:black;font-size:11pt}.wrap{width:100%}a{color:black!important}}
+
+/* Personal academic portrait */
+.portrait {
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait .profile-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: inherit;
+  display: block;
+  z-index: 3;
+}
